@@ -8,6 +8,10 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { FooterComponent } from './footer/footer.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { EmployeeComponent } from './employee/employee.component';
+import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './login/login.component';
+import { RegistrationComponent } from './registration/registration.component';
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +20,11 @@ import { EmployeeComponent } from './employee/employee.component';
     SidebarComponent,
     FooterComponent,
     DashboardComponent,
-    EmployeeComponent
+    EmployeeComponent,
+    HomeComponent,
+    LoginComponent,
+    RegistrationComponent,
+    ForgotPasswordComponent
   ],
   imports: [
     BrowserModule,
