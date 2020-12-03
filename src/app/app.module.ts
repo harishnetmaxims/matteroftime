@@ -12,6 +12,12 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ResetpasswordComponent } from './resetpassword/resetpassword.component';
+import { DepartmentComponent } from './department/department.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { EditDepartmentComponent } from './edit-department/edit-department.component';
 
 @NgModule({
   declarations: [
@@ -24,11 +30,18 @@ import { ForgotPasswordComponent } from './forgot-password/forgot-password.compo
     HomeComponent,
     LoginComponent,
     RegistrationComponent,
-    ForgotPasswordComponent
+    ForgotPasswordComponent,
+    ResetpasswordComponent,
+    DepartmentComponent,
+    EditDepartmentComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
